@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Reddit</title>
+</head>
+<body>
+    <!-- Small Navbar -->
+    <div class="small_navbar">
+        <ul class="small_navbar_list">
+            <li onclick="goToMainPage()">all</li>
+            <li onclick="getPostsBySubreddit('marvel')">marvel</li>
+            <li onclick="getPostsBySubreddit('music')">music</li>
+            <li>gaming</li>
+            <li onclick="getPostsBySubreddit('cats')">cats</li>
+            <li>diy</li>
+            <li>tifu</li>
+            <li>jokes</li>
+            <li onclick="getPostsBySubreddit('oddlysatisfying')">oddlysatisfying</li>
+            <li onclick="getPostsBySubreddit('lego')">lego</li>
+            <li>news</li>
+            <li>news</li>
+            <li onclick="getPostsBySubreddit('aita')">aita</li>
+            <li>funny</li>
+        </ul>
+    </div>
+
+    <!-- Big Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary big_navbar">
+    <div class="container-fluid">
+        <img onclick="goToMainPage()" id="reddit_img" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_reddit-512.png" alt="reddit icon">
+        <a class="navbar-brand" href="#" onclick="goToMainPage()">Reddit</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">hot</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">new</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">rising</a>
+            </li>
+            <a class="nav-link" href="#">controversial</a>
+            </li>
+            <a class="nav-link" href="#">top</a>
+            </li>
+            <a class="nav-link" href="#">wiki</a>
+            </li>
+            <li class="nav-item dropdown">
+            <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown link
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+            </li>
+        </ul> -->
+        </div>
+    </div>
+    </nav>
+
+    <div id="post_container">
+
+    </div>
+
+    <!-- Can't use this card, but is good to get idea of framework -->
+    <!-- <div class="post">
+        <p class="upvotes">200</p>
+        <img class="post_image" src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/marvel-studios-cinematic-universe/1/16/Groot_textless.jpg" alt="Groot">
+        <div class="post_info">
+            <h1 class="post_title">Title</h1>
+            <div class="post_details">
+                <p class="post_author">Author</p>
+                <p class="post_subreddit">subreddit</p>
+            </div>
+        </div>
+    </div> -->
+
+
+    <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
